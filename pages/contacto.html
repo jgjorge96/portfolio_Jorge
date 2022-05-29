@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofio de Jesus Gabriel Jorge, front-end developer. Aca encontraras sus diferentes trabajos e informacion de contacto">
+    <meta name="keywords" content="HTML, CSS, Javascript, JS, React, Front, End, Linkedin, Freelance">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!--Inicio Header y Nav-->
+    <header>
+        <nav class="headerNav">
+            <a href="../index.html">
+                <img src="../media/logo.svg" alt="logo">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="experiencia.html" class="nav-link">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="servicios.html" class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link active">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!--Fin Header y Nav-->
+
+    <!--Inicio seccion contacto y form-->
+    <section class="contactMain">
+        <div>
+            <div>
+                <h3>Contactame</h3>
+                <h2>¿Tenés una idea?</h2>
+            </div>
+            <div class="formContainer">
+                <div>
+                    <form action="">
+                        <input type="text" class="nombre" placeholder="Nombre" id="Nombre">
+                        <input type="text" class="apellido" placeholder="Apellido" id="Apellido">
+                        <textarea class="mensaje" placeholder="Mensaje" id="Mensaje" style="resize: none;"></textarea>
+                        <div>
+                            <div>
+                                <div class="socialMedia1">
+                                    <a href="https://www.linkedin.com/in/jes%C3%BAs-gabriel-jorge-9b6093201/" target="_blank">
+                                        <img src="../media/linkedin.svg" alt="logo de linkedi">
+                                    </a>
+                                </div>
+                                <div class="socialMedia1">
+                                    <a href="https://github.com/jgjorge96/" target="_blank">
+                                        <img src="../media/github1.svg" alt="logo de github">
+                                    </a>
+                                </div>
+                            </div>
+                            <button value="Submit" class="sendButton" onclick="contactMail()">Enviar</button>
+                        </div>
+                    </form>
+                    <img src="../media/memojiCall.svg" alt="memoji propio llamando" class="contactImg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin seccion contacto y form-->
+
+    <!--Inicio Footer-->
+    <footer>
+        <div>
+            <div>
+                <img src="../media/logo.svg" alt="logo">
+                <h2>Jesús Gabriel Jorge</h2>
+            </div>
+            <nav class="footerNav">
+                <ul>
+                    <li>
+                        <a href="../index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="experiencia.html">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>©All right reserved </p>
+        </div>
+    </footer>
+    <!--Fin Footer-->
+
+    <script src="../script.js"></script>
+    <script src="../contactMail.js"></script>
+</body>
+</html>

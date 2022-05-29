@@ -1,0 +1,1759 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #111A20;
+}
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #79F3AA;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.6875rem;
+    line-height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.125rem;
+    line-height: 2.875rem;
+}
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.0625rem;
+}
+h4 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+}
+p {
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.0625rem;
+}
+
+.headerNav {
+    height: 7rem;
+    background-color: #17232B;
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        max-width: 5rem;
+        max-height: 3rem;
+        margin-left: 8.4375rem;
+    }
+
+    .nav-menu {
+        width: 33.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 15rem;
+
+        li {
+            list-style-type: none;
+            a {
+                font-family: 'Noto Sans', sans-serif;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+            a.active {
+                color: #79F3AA;
+            }
+        }
+    }
+}
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    height: 2px;
+    margin: 2.2px 0;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #79F3AA;
+    float: right;
+    clear: right;
+}
+.bar:nth-child(1) {
+    width: 20px;
+}
+.bar:nth-child(2) {
+    width: 14px;
+}
+.bar:nth-child(3) {
+    width: 16px;
+}
+
+@media(max-width:900px) {
+    .hamburguer {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        width: 24px;
+        margin: 3.7px 0;
+    }
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        width: 24px;
+        margin: 3.7px 0;
+    }
+
+    .nav-menu {
+        margin-left: auto;
+        position: fixed;
+        left: -220%;
+        top: 115px;
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #111A20;
+        width: 23.4375rem;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: -19.5rem;
+    }
+}
+
+.sectionIntro {
+    height: 56.9375rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+
+    img {
+        margin-right: 2.5rem;
+    }
+    div {
+        align-items: center;
+    }
+}
+.cvButton {
+    width: 11.9375rem;
+    height: 3.5625rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #79F3AA;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #33333D;
+    margin-top: 3rem;
+    margin-bottom: 3.375rem;
+}
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        margin: 0;
+    }
+}
+
+.sectionAboutMe {
+    height: 46.5625rem;
+    background-color: #79F3AA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 72.4375rem;
+        height: 30.625rem;
+        border-radius: 1rem;
+        background-color: #111A20;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+        img {
+            width: 23.125rem;
+            height: 23.125rem;
+        }
+
+        div {
+            width: 43.125rem;
+            height: 23.625rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            
+            h3 {
+                color: #79F3AA;
+            }
+            h2 {
+                font-size: 3rem;
+                margin-top: 2rem;
+                margin-bottom: 2.5rem;
+            }
+            p {
+                width: 43.1875rem;
+            }
+            .contactButton {
+                width: 11.9375rem;
+                height: 3.5625rem;
+                border-radius: 0.5rem;
+                border: none;
+                background-color: #79F3AA;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: #33333D;
+                box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+                margin-top: 2.5rem;
+            }
+        }
+    }
+}
+
+.sectionSkills {
+    height: 58.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    div {
+        max-width: 68.75rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+        div {
+            flex-direction: column;
+            width: 41.8125rem;
+            h3 {
+                color: #79F3AA;
+            }
+            h2 {
+                width: 32.875rem;
+                font-size: 3rem;
+                line-height: 4rem;
+                margin-top: 1.875rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+        .memojiLaptop {
+            max-width: 26rem;
+            max-height: 26rem;
+        }
+    }
+    
+    .skills {
+        max-width: 46.4375rem;
+        height: 15.1875rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        img {
+            width: 6.8125rem;
+            height: 6.6875;
+        }
+    }
+}
+.sectionPortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9.375rem;
+
+    div {
+        display: flex;
+        width: 72.5625rem;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            color: #79F3AA;
+        }
+        h2 {
+            font-size: 3rem;
+            line-height: 4rem;
+            margin-top: 0.5rem;
+            margin-bottom: 3.375rem;
+        }
+    }
+    .spContainer {
+        width: 72.5625rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .spCard {
+            width: 23.1875rem;
+            height: 29.4175rem;
+            background-color: #33333D;
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 1.25rem;
+            align-items: center;
+
+            img {
+                margin-top: 1.5rem;
+            }
+            div {
+                width: 20.1875rem;
+                margin-top: 1.5rem;
+                div {
+                    width: 20.1875rem;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: auto;
+                    ul {
+                        margin-left: 1.8125rem;
+                        width: 20.1875rem;
+                        font-family: 'Noto Sans', sans-serif;
+                        font-size: 1.25rem;
+                        line-height: 1.7025rem;
+                        color: #FFFFFF;
+                        li {
+                            p {
+                                margin-top: 0px;
+                                margin-left: 0px;
+                                font-size: 1.25rem;
+                                line-height: 1.7025rem;
+                            }
+                        }
+                        li::marker {
+                            color: #79F3AA;
+                        }
+                    }
+                    h3 {
+                        width: 20.1875rem;
+                        font-size: 0.875rem;
+                        line-height: 1.266875rem;
+                        margin-left: 1.8125rem;
+                        margin-top: 0.5rem;
+                        margin-bottom: 1rem;
+                    }
+                    p {
+                        width: 20.1875rem;
+                        font-size: 0.875rem;
+                        line-height: 1.266875rem;
+                        margin-left: 1.8125rem;
+                    }
+                }
+                .seeButton {
+                    width: 11.9375rem;
+                    height: 3.5625rem;
+                    border-radius: 0.5rem;
+                    border: none;
+                    background-color: #79F3AA;
+                    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    color: #33333D;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+.sectionContact {
+    height: 10.875rem;
+    background: linear-gradient(180deg, #111A20 50%, #33333D 50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    div {
+        width: 72.5rem;
+        height: 10.875rem;
+        border-radius: 1rem;
+        background-color: #79F3AA;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        img {
+            max-width: 272px;
+            max-height: 244px;
+        }
+        div {
+            p {
+                width: 24.3125rem;
+                height: 10.875rem;
+                color: #000000;
+                font-size: 1.25rem;
+                font-weight: 500;
+                line-height: 1.6rem;
+                display: flex;
+                align-items: center;
+    
+            }
+            span {
+                height: 10.875rem;
+                width: 21rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button {
+                    width: 191px;
+                    height: 57px;
+                    background-color: #79F3AA;
+                    color: #111A20;
+                    border: 2px solid #111A20;
+                    border-radius: 0.5rem;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+        
+       
+    }
+}
+footer {
+    height: 18.75rem;
+    background-color: #33333D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    div {
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3.375rem;
+        
+
+        div{
+            width: 25.3125rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            img {
+                max-width: 5rem;
+                max-height: 3rem;
+            }
+        }
+
+        .footerNav {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.7rem;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+        
+            ul {
+                width: 33.25rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+        
+                li {
+                    list-style-type: none;
+                    a {
+                        font-family: 'Noto Sans', sans-serif;
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        line-height: 1.7rem;
+                        color: #FFFFFF;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 0.75rem;
+            line-height: 1.1rem;
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+.expSkills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        h3 {
+            color: #79F3AA;
+        }
+        h2 {
+            max-width: 32.875rem;
+            text-align: center;
+            font-size: 3rem;
+            line-height: 4.09rem;
+            margin-top: 1.2rem;
+        }
+        p {
+            max-width: 41.8125rem;
+            text-align: center;
+            margin-top: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
+        .skillContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            width: 72.125rem;
+        
+            .skillCard {
+                width: 7.125rem;
+                height: 7rem;
+                background-color: #33333D;
+                box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+                border-radius: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            
+                img {
+                    width: 3.125rem;
+                    height: 3.125rem;
+                }
+                h4 {
+                    margin-top: 0,523125rem;
+                }
+            }
+        }
+    }
+}
+
+.experience {
+    margin-top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        width: 72.5rem;
+        h3 {
+            color: #79F3AA;
+        }
+        h2 {
+            font-size: 3rem;
+            line-height: 4.08625rem;
+        }
+    }
+    .expCard {
+        width: 72.5rem;
+        height: 15.875rem;
+        background-color: #33333D;
+        border-radius: 1.25rem;
+        margin-top: 3.5rem;
+        margin-bottom: 5rem;
+        align-items: center;
+
+        div {
+            width: 67.5625rem;
+            height: 10.875rem;
+            align-items: center;
+            justify-content: space-between;
+            ul {
+                width: 63.375rem;
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 2.125rem;
+                color: #FFFFFF;
+                li::marker {
+                    color: #79F3AA;
+                }
+            }
+            h3 {
+                width: 63.375rem;
+            }
+            p {
+                width: 63.375rem;
+            }
+        }
+    }
+}
+
+.expFormation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        div {
+            flex-direction: column;
+            max-width: 41.8125rem;
+
+            h3 {
+                color: #79F3AA;
+            }
+            h2 {
+                font-size: 3rem;
+                line-height: 4.08625rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    .formationCard {
+        width: 72.5625rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+        margin-top: 5rem;
+
+        div {
+            width: 23.1875rem;
+            height: 18rem;
+            background-color: #33333D;
+            border-radius: 1.25rem;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                height: 13.25rem;
+                justify-content: space-between;
+                ul {
+                    width: 16.0625rem;
+                    font-family: 'Noto Sans', sans-serif;
+                    font-size: 2.125rem;
+                    color: #FFFFFF;
+                    li {
+                        p {
+                            font-size: 2.125rem;
+                            line-height: 2.894375rem;
+                            margin-left: 0px;
+                        }
+                    }
+    
+                    li::marker {
+                        color: #79F3AA;
+                    }
+                }
+                h3 {
+                    width: 16.0625rem;
+                }
+                p {
+                    width: 18.125rem;
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.servIntro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8.375rem;
+    div {
+        width: 68.3125rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+
+        img {
+            max-width: 23rem;
+            max-height: 23rem;
+        }
+        div {
+            max-width: 41.8125rem;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            
+
+            h3 {
+                color: #79F3AA;
+                font-size: 1.5rem;
+                line-height: 2.043125rem;
+            }
+            h2 {
+                font-size: 3rem;
+                line-height: 4.08625rem;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            p {
+                font-size: 1.5rem;
+                line-height: 2.043125rem;
+                text-align: center;
+            }
+            .cvButton1 {
+                margin-top: 2rem;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.servDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    
+    div {
+        width: 72.5625rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+            width: 23.1875rem;
+            height: 15rem;
+            background-color: #33333D;
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 1.25rem;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                ul {
+                    width: 16.0625rem;
+                    font-family: 'Noto Sans', sans-serif;
+                    font-size: 1.5rem;
+                    line-height: 2.043125rem;
+                    color: #FFFFFF;
+                    li {
+                        p {
+                            margin-top: 0px;
+                            font-size: 1.5rem;
+                            line-height: 2.043125rem;
+                        }
+                    }
+                    li::marker {
+                        color: #79F3AA;
+                    }
+                }
+                p {
+                    width: 16.0625rem;
+                    font-size: 1rem;
+                    line-height: 1.361875rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.portfolioIntro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10.75rem;
+
+    div {
+        width: 72.375rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+
+        img {
+            max-width: 23rem;
+            max-height: 23rem;
+        }
+        div {
+            max-width: 47.6875rem;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            h3 {
+                color: #79F3AA;
+                font-size: 1.5rem;
+                line-height: 2.043125rem;
+            }
+            h2 {
+                font-size: 3rem;
+                line-height: 4.08625rem;
+                margin-bottom: 1.5rem;
+            }
+            p {
+                font-size: 1.5rem;
+                line-height: 2.043125rem;
+            }
+        }
+    }
+}
+
+.portfolioDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11.25rem;
+    margin-bottom: 10rem;
+
+    div {
+        height: 80.1875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        .portfolioCard {
+            width: 72.5rem;
+            height: 25.0625rem;
+            border-radius: 1.25rem;
+            background-color: #33333D;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                width: 67.5rem;
+                height: 25.375rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap-reverse;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    max-width: 24.1875rem;
+                    max-height: 20.0625rem;
+                }
+                div {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    width: 34.625rem;
+                    height: 20.0625rem;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    
+
+                    div {
+                        align-items: flex-start;
+                        ul {
+                            width: 32.5625rem;
+                            font-family: 'Noto Sans', sans-serif;
+                            font-size: 2.125rem;
+                            line-height: 2.894375rem;
+                            color: #FFFFFF;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 2.5rem;
+                            li {
+                                p {
+                                    margin-top: 0px;
+                                    font-size: 2.125rem;
+                                    line-height: 2.894375rem;
+                                    margin-left: 0px;
+                                }
+                            }
+                            li::marker {
+                                color: #79F3AA;
+                            }
+                        }
+                        h3 {
+                            width: 32.5625rem;
+                            color: #79F3AA;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                            margin-left: 2.5rem;
+                        }
+                        p {
+                            width: 32.5625rem;
+                            margin-left: 2.5rem;
+                        }
+                    }
+                    .verButton {
+                        width: 11.9375rem;
+                        height: 3.5625rem;
+                        background-color: #79F3AA;
+                        filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.15));
+                        font-family: 'Noto Sans', sans-serif;
+                        font-size: 1rem;
+                        line-height: 1.53875rem;
+                        border-radius: 0.5rem;
+                        border: none;
+                        margin-left: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contactMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+
+    div {
+        height: 42.6875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        div {
+           display: flex;
+           flex-direction: column;
+           flex-wrap: nowrap;
+           
+           h3 {
+               color: #79F3AA;
+           }
+           h2 {
+               font-size: 3rem;
+               line-height: 4.08625rem;
+           }
+        }
+        .formContainer {
+            width: 72.5rem;
+            max-height: 31.75rem;
+            background-color: #33333D;
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 1.25rem;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: flex-end;
+                justify-content: center;
+                width: 69.4375rem;
+                form {
+                    margin-left: 2rem;
+                    width: 72.5rem;
+                    height: 31.75rem;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: flex-end;
+                    input {
+                        margin-left: 1rem;
+                        width: 51.125rem;
+                        height: 4.0625rem;
+                        border-radius: 1.25rem;
+                        background-color: #27272C;
+                        border: none;
+                        text-align: start;
+                        color: #FFFFFF;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        line-height: 2.043125rem;
+                        
+                    }
+                    input[type=text]:focus {
+                        outline: none;
+                    }
+                    input::placeholder {
+                        font-family: 'Noto Sans', sans-serif;
+                        color: #FFFFFF;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        line-height: 2.043125rem;
+                        padding-left: 1.5rem;
+                    }
+                    textarea {
+                        margin-left: 1rem;
+                        width: 51.125rem;
+                        height: 4.0625rem;
+                        border-radius: 1.25rem;
+                        background-color: #27272C;
+                        border: none;
+                        text-align: start;
+                        color: #FFFFFF;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        line-height: 2.043125rem;
+                    }
+                    textarea::placeholder {
+                        font-family: 'Noto Sans', sans-serif;
+                        color: #FFFFFF;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        line-height: 2.043125rem;
+                        padding-top: 1.5rem;
+                        padding-left: 1.5rem;
+                    }
+                    textarea:focus {
+                        outline: none;
+                    }
+                    .apellido {
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                    .mensaje {
+                        height: 11.0625rem;
+                    }
+                    .sendButton {
+                        width: 11.9375rem;
+                        height: 3.5625rem;
+                        background-color: #79F3AA;
+                        filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.15));
+                        font-family: 'Noto Sans', sans-serif;
+                        font-size: 1rem;
+                        line-height: 1.53875rem;
+                        border-radius: 0.5rem;
+                        border: none;
+                    }
+                    div {
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        width: 21.4375rem;
+                        height: 3.5625rem;
+                        margin-top: 2rem;
+                        
+                        div {
+                            width: 7rem;
+                            .socialMedia1 {
+                                width: 2.75rem;
+                                height: 2.75rem;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #27272C;
+                                box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+                                border-radius: 0.5rem;
+                                
+                                img {
+                                    max-width: 2rem;
+                                    max-height: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .contactImg {
+                    width: 20.5625rem;
+                    height: 20.5625rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .headerNav {
+        justify-content: space-between;
+
+        img {
+            margin-left: 9.25rem;
+        }
+    }
+
+    .sectionIntro {
+        height: 44.3125rem;
+        align-content: flex-start;
+        img {
+            max-width: 12.5rem;
+            max-height: 12.25rem;
+            margin-top: 2.5rem;
+            margin-right: 0;
+        }
+        div {
+            h2 {
+                font-size: 1.25rem;
+            }
+            h1 {
+                font-size: 2.125rem;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+            .cvButton {
+                margin-top: 2rem;
+                margin-bottom: 0rem;
+            }
+        }
+        
+    }
+
+    .sectionAboutMe {
+        height: 43.1875rem;
+        
+        div {
+            height: auto;
+            width: 21.4375rem;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 13.75rem;
+                max-height: 13.75rem;
+            }
+
+            div {
+                align-items: center;
+                justify-content: flex-start;
+                height: 21.5rem;
+
+                h3 {
+                    font-size: 1.25rem;
+                }
+                h2 {
+                    font-size: 2.125rem;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    width: 18.4375rem;
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                    text-align: center;
+                    margin-top: 1rem;
+                }
+                .contactButton {
+                    margin-top: 1.5rem;
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .sectionSkills {
+        height: 54.25rem;
+        width: auto;
+        justify-content: flex-start;
+        margin-top: 3rem;
+
+        div {
+            justify-content: center;
+            div {
+                width: 21.3125rem;
+                flex-direction:row;
+                align-items: center;
+                justify-content: center;
+                h3 {
+                    font-size: 1.25rem;
+                }
+                h2 {
+                    font-size: 2.125rem;
+                    line-height: 3rem;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    text-align: center;
+                }
+                p {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+            .memojiLaptop {
+                width: 12.5rem;
+                height: 12.5rem;
+            }
+        }
+
+        .skills {
+            justify-content: center;
+        }
+    }
+
+    .sectionPortfolio {
+        margin-top: 4.0625rem;
+
+        div {
+            width: 21.3125rem;
+
+            h3 {
+                font-size: 1.25rem;
+                line-height: 1.7025rem;
+            }
+            h2 {
+                font-size: 2.125rem;
+                line-height: 2.894375rem;
+            }
+        }
+        .spContainer {
+            width: 21.5375rem;
+            gap: 2rem;
+
+            .spCard {
+                width: 21.5375rem;
+                height: 26.875rem;
+
+                img {
+                    width: 18.4375rem;
+                    height: 10.331875rem;
+                }
+                div {
+                    width: 18.4375rem;
+
+                    div {
+                        width: 18.4375rem;
+
+                        ul {
+                            width: 18.4375rem;
+                        }
+                        h3 {
+                            width: 18.4375rem;
+                        }
+                        p {
+                            width: 18.4375rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sectionContact {
+        height: 27.375rem;
+        background: linear-gradient(180deg, #111A20 66%, #33333D 33%);
+        
+        div {
+            height: 27.375rem;
+            width: 21.5625rem;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            align-content: space-between;
+            justify-content: flex-end;
+
+            img {
+                max-width: 17rem;
+                max-height: 15.25rem;
+            }
+            div {
+                height: 10.625rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 2.5rem;
+                p {
+                    width: 18.5625rem;
+                    height: 5rem;
+                }
+                span {
+                    justify-content: flex-start;
+                    height: 3.5625rem;
+                    width: 18.5625rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 28.8125rem;
+        width: auto;
+
+        div {
+            width: 23.4375rem;
+            height: 23.125rem;
+            margin-bottom: 2rem;
+            div {
+                width: 18.75rem;
+                justify-content: center;
+                img {
+                    max-width: 5rem;
+                    max-height: 3rem;
+                }
+                h2 {
+                    font-size: 2.125rem;
+                }
+            }
+
+            .footerNav {
+                ul {
+                    width: 6.625rem;
+                    height: 12.5rem;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .expSkills {
+        img {
+            max-width: 12.5rem;
+            max-height: 12.5rem;
+        }
+        div {
+            max-width: 21.4375rem;
+
+            h3 {
+                font-size: 1.25rem;
+                line-height: 1.7025rem;
+            }
+            h2 {
+                font-size: 2.125rem;
+                line-height: 2.894375rem;
+                max-width: 19rem;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1.361875rem;
+                max-width: 19rem;
+            }
+            .skillContainer {
+                width: 21.4375rem;
+                height: 21.125rem;
+
+                .skillCard {
+                    width: 6.5rem;
+                    height: 6.375rem;
+                }
+            }
+        }
+    }
+
+    .experience {
+        margin-top: 3rem;
+
+        div {
+            max-width: 21.3125rem;
+            h3 {
+                font-size: 1.25rem;
+                line-height: 1.7025rem;
+            }
+            h2 {
+                font-size: 2.125rem;
+                line-height: 2.894375rem;
+            }
+        }
+        .expCard {
+            height: 11.8125rem;
+            margin-top: 2.5rem;
+            margin-bottom: 3.5rem;
+            div {
+                max-width: 18.9375rem;
+                max-height: 8.8125rem;
+                ul {
+                    width: 16.9375rem;
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                    line-height: 1.7025rem;
+                }
+                h3 {
+                    width: 16.9375rem;
+                    font-size: 0.875rem;
+                    line-height: 1.25rem;
+                }
+                p {
+                    width: 16.9375rem;
+                    font-size: 0.625rem;
+                    line-height: 0.905rem;
+                }
+            }
+        }
+    }
+
+    .expFormation {
+        div {
+            align-items: center;
+            justify-content: center;
+            img {
+                max-width: 16.0625rem;
+                max-height: 16.0625rem;
+            }
+            div {
+                h3 {
+                    font-size: 1.25rem;
+                    line-height: 1.7025rem;
+                }
+                h2 {
+                    font-size: 2.125rem;
+                    line-height: 2.894375rem;
+                    max-width: 19rem;
+                }
+                p {
+                    font-size: 1rem;
+                    line-height: 1.361875rem;
+                    max-width: 19rem;
+                    text-align: center;
+                }
+            }
+        }
+        .formationCard {
+            margin-top: 3.5rem;
+            margin-bottom: 5rem;
+            width: 21.4375rem;
+            height: 30.75rem;
+            align-content: space-between;
+            justify-content: space-around;
+
+            div {
+                width: 10.25rem;
+                height: 13.875rem;
+                div {
+                    width: 8.25rem;
+                    max-height: 10.875rem;
+                    align-items: flex-start;
+                    ul {
+                        width: 8.25rem;
+                        font-size: 1.25rem;
+                        line-height: 1.7025rem;
+                        list-style-position: inside;
+
+                        li {
+                            p {
+                                font-size: 1.25rem;
+                                line-height: 1.7025rem;
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                    h3 {
+                        width: 8.25rem;
+                        font-size: 0.875rem;
+                        line-height: 1.25rem;
+                    }
+                    p {
+                        width: 8.25rem;
+                        font-size: 0.875rem;
+                        line-height: 1.25rem;
+                        text-align: start;
+                        margin-left: 0px;
+                    }
+                }
+            }
+            .customCard {
+                height: 15.375rem;
+                div {
+                    max-height: 12.375rem;
+                }
+            }
+        }
+    }
+
+    .servIntro {
+        margin-top: 3.5rem;
+
+        div {
+            width: 21.3125rem;
+            justify-content: center;
+
+            img {
+                max-width: 12.5rem;
+                max-height: 12.5rem;
+            }
+            div {
+                max-width: 21.3125rem;
+
+                h3 {
+                    font-size: 1.25rem;
+                    line-height: 1.7025rem;
+                }
+                h2 {
+                    font-size: 2.125rem;
+                    line-height: 2.894375rem;
+                    margin-top: 0.5rem;
+                    text-align: center;
+                }
+                p {
+                    max-width: 18.4375rem;
+                    font-size: 1rem;
+                    line-height: 1.361875rem;
+                }
+                .cvButton1 {
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .servDetails {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+
+        div {
+            justify-content: center;
+            height: 38.4375rem;
+            div {
+                width: 21.4375rem;
+                height: 11.8125rem;
+                div {
+                    justify-content: flex-start;
+                    ul {
+                        margin-top: 1.5rem;
+                        li{
+                            p{
+                                font-size: 1.25rem;
+                                line-height: 1.7025rem;
+                                font-weight: 500;
+                                
+                            }
+                        }
+                    }
+                    p {
+                        width: 17rem;
+                        font-size: 0.875rem;
+                        line-height: 1.266875rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .portfolioIntro {
+        margin-top: 3.5rem;
+
+        div {
+            max-width: 21.3125rem;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 12.5rem;
+                max-height: 12.5rem;
+            }
+            div {
+                h3 {
+                    font-size: 1.25rem;
+                    line-height: 1.7025rem;
+                }
+                h2 {
+                    font-size: 2.125rem;
+                    line-height: 2.894375rem;
+                }
+                p {
+                    font-size: 1rem;
+                    line-height: 1.361875rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .portfolioDetails {
+        margin-top: 3.5rem;
+        margin-bottom: 5rem;
+
+        div {
+            height: 112.25rem;
+            width: 21.4375rem;
+
+            .portfolioCard {
+                height: 35.75rem;
+                width: 21.4375rem;
+
+                div {
+                    height: 32.75rem;
+                    width: 19.4375rem;
+                    align-content: space-between;
+
+                    img {
+                        width: 19.4375rem;
+                        height: 16.125rem;
+                    }
+                    div {
+                        width: 19.4375rem;
+                        height: 16.625rem;
+                        
+                        
+                        div {
+                            ul {
+                                width: auto;
+                                font-size: 1.25rem;
+                                line-height: 1.7025rem;
+                                margin-left: 1rem;
+                                margin-top: 1rem;
+                                li {
+                                    p {
+                                        font-size: 1.25rem;
+                                        line-height: 1.7025rem;
+                                    }
+                                }
+                            }
+                            h3 {
+                                width: auto;
+                                font-size: 0.875rem;
+                                line-height: 1.266875rem;
+                                margin-left: 1rem;
+                                margin-top: 0.5rem;
+                            }
+                            p {
+                                width: auto;
+                                font-size: 0.875rem;
+                                line-height: 1.266875rem;
+                                margin-left: 1rem;
+                            }
+                        }
+                        .verButton {
+                            margin-left: 3.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contactMain {
+        margin-bottom: 5rem;
+
+        div {
+            align-items: center;
+            height: 33.125rem;
+
+            div {
+                h3 {
+                    font-size: 1.25rem;
+                    line-height: 1.7025rem;
+                }
+                h2 {
+                    font-size: 2.125rem;
+                    line-height: 2.894375rem;
+                }
+            }
+            .formContainer {
+                width: 21.375rem;
+                height: 25.5625rem;
+
+                div {
+                    width: 21.375rem;
+                    align-items: flex-start;
+
+                    img {
+                        display: none;
+                    }
+                    form {
+                        margin-left: 0px;
+                        height: 23.5rem;
+                        align-items: center;
+                        input {
+                            margin-left: 0px;
+                            width: 19.375rem;
+                            height: 3.1875rem;
+                            border-radius: 1rem;
+                            font-size: 0.875rem;
+                            line-height: 1.266875rem;
+                        }
+                        input::placeholder {
+                            font-size: 0.875rem;
+                            line-height: 1.266875rem;
+                        }
+                        textarea {
+                            margin-left: 0px;
+                            width: 19.375rem;
+                            height: 9.4375rem;
+                            font-size: 0.875rem;
+                            line-height: 1.266875rem;
+                        }
+                        textarea::placeholder {
+                            font-size: 0.875rem;
+                            line-height: 1.266875rem;
+                            padding-top: 1rem;
+                        }
+                        .nombre {
+                            margin-top: 1.5rem;
+                        }
+                        .apellido {
+                            margin-top: 0.5rem;
+                            margin-bottom: 0.5rem;
+                        }
+                        .mensaje {
+                            height: 9.4375rem;
+                        }
+                        div {
+                            width: 19.3375rem;
+                            margin-top: 1.1875rem;
+
+                            div {
+                                width: 6rem;
+                                img {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

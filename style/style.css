@@ -1,0 +1,1323 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  background-color: #111A20; }
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  color: #79F3AA;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.6875rem;
+  line-height: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem; }
+
+h2 {
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.125rem;
+  line-height: 2.875rem; }
+
+h3 {
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0625rem; }
+
+h4 {
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1875rem; }
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0625rem; }
+
+.headerNav {
+  height: 7rem;
+  background-color: #17232B;
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .headerNav img {
+    max-width: 5rem;
+    max-height: 3rem;
+    margin-left: 8.4375rem; }
+  .headerNav .nav-menu {
+    width: 33.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15rem; }
+    .headerNav .nav-menu li {
+      list-style-type: none; }
+      .headerNav .nav-menu li a {
+        font-family: 'Noto Sans', sans-serif;
+        color: #FFFFFF;
+        text-decoration: none; }
+      .headerNav .nav-menu li a.active {
+        color: #79F3AA; }
+
+.hamburguer {
+  display: none;
+  cursor: pointer; }
+
+.bar {
+  display: block;
+  height: 2px;
+  margin: 2.2px 0;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #79F3AA;
+  float: right;
+  clear: right; }
+
+.bar:nth-child(1) {
+  width: 20px; }
+
+.bar:nth-child(2) {
+  width: 14px; }
+
+.bar:nth-child(3) {
+  width: 16px; }
+
+@media (max-width: 900px) {
+  .hamburguer {
+    display: block;
+    margin-right: 1rem; }
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0; }
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    width: 24px;
+    margin: 3.7px 0; }
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    width: 24px;
+    margin: 3.7px 0; }
+  .nav-menu {
+    margin-left: auto;
+    position: fixed;
+    left: -220%;
+    top: 115px;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #111A20;
+    width: 23.4375rem;
+    text-align: center;
+    transition: 0.3s; }
+  .nav-item {
+    margin: 16px 0; }
+  .nav-menu.active {
+    left: -19.5rem; } }
+
+.sectionIntro {
+  height: 56.9375rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle; }
+  .sectionIntro img {
+    margin-right: 2.5rem; }
+  .sectionIntro div {
+    align-items: center; }
+
+.cvButton {
+  width: 11.9375rem;
+  height: 3.5625rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #79F3AA;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #33333D;
+  margin-top: 3rem;
+  margin-bottom: 3.375rem; }
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .socialMedia img {
+    margin: 0; }
+
+.sectionAboutMe {
+  height: 46.5625rem;
+  background-color: #79F3AA;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sectionAboutMe div {
+    width: 72.4375rem;
+    height: 30.625rem;
+    border-radius: 1rem;
+    background-color: #111A20;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+    .sectionAboutMe div img {
+      width: 23.125rem;
+      height: 23.125rem; }
+    .sectionAboutMe div div {
+      width: 43.125rem;
+      height: 23.625rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start; }
+      .sectionAboutMe div div h3 {
+        color: #79F3AA; }
+      .sectionAboutMe div div h2 {
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem; }
+      .sectionAboutMe div div p {
+        width: 43.1875rem; }
+      .sectionAboutMe div div .contactButton {
+        width: 11.9375rem;
+        height: 3.5625rem;
+        border-radius: 0.5rem;
+        border: none;
+        background-color: #79F3AA;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #33333D;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+        margin-top: 2.5rem; }
+
+.sectionSkills {
+  height: 58.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+  .sectionSkills div {
+    max-width: 68.75rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start; }
+    .sectionSkills div div {
+      flex-direction: column;
+      width: 41.8125rem; }
+      .sectionSkills div div h3 {
+        color: #79F3AA; }
+      .sectionSkills div div h2 {
+        width: 32.875rem;
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-top: 1.875rem;
+        margin-bottom: 2.5rem; }
+    .sectionSkills div .memojiLaptop {
+      max-width: 26rem;
+      max-height: 26rem; }
+  .sectionSkills .skills {
+    max-width: 46.4375rem;
+    height: 15.1875rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .sectionSkills .skills img {
+      width: 6.8125rem;
+      height: 6.6875; }
+
+.sectionPortfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9.375rem; }
+  .sectionPortfolio div {
+    display: flex;
+    width: 72.5625rem;
+    flex-direction: column;
+    align-items: center; }
+    .sectionPortfolio div h3 {
+      color: #79F3AA; }
+    .sectionPortfolio div h2 {
+      font-size: 3rem;
+      line-height: 4rem;
+      margin-top: 0.5rem;
+      margin-bottom: 3.375rem; }
+  .sectionPortfolio .spContainer {
+    width: 72.5625rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .sectionPortfolio .spContainer .spCard {
+      width: 23.1875rem;
+      height: 29.4175rem;
+      background-color: #33333D;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+      border-radius: 1.25rem;
+      align-items: center; }
+      .sectionPortfolio .spContainer .spCard img {
+        margin-top: 1.5rem; }
+      .sectionPortfolio .spContainer .spCard div {
+        width: 20.1875rem;
+        margin-top: 1.5rem; }
+        .sectionPortfolio .spContainer .spCard div div {
+          width: 20.1875rem;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: center;
+          margin-top: auto; }
+          .sectionPortfolio .spContainer .spCard div div ul {
+            margin-left: 1.8125rem;
+            width: 20.1875rem;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.7025rem;
+            color: #FFFFFF; }
+            .sectionPortfolio .spContainer .spCard div div ul li p {
+              margin-top: 0px;
+              margin-left: 0px;
+              font-size: 1.25rem;
+              line-height: 1.7025rem; }
+            .sectionPortfolio .spContainer .spCard div div ul li::marker {
+              color: #79F3AA; }
+          .sectionPortfolio .spContainer .spCard div div h3 {
+            width: 20.1875rem;
+            font-size: 0.875rem;
+            line-height: 1.266875rem;
+            margin-left: 1.8125rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem; }
+          .sectionPortfolio .spContainer .spCard div div p {
+            width: 20.1875rem;
+            font-size: 0.875rem;
+            line-height: 1.266875rem;
+            margin-left: 1.8125rem; }
+        .sectionPortfolio .spContainer .spCard div .seeButton {
+          width: 11.9375rem;
+          height: 3.5625rem;
+          border-radius: 0.5rem;
+          border: none;
+          background-color: #79F3AA;
+          box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          color: #33333D;
+          margin-top: 2rem; }
+
+.sectionContact {
+  height: 10.875rem;
+  background: linear-gradient(180deg, #111A20 50%, #33333D 50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .sectionContact div {
+    width: 72.5rem;
+    height: 10.875rem;
+    border-radius: 1rem;
+    background-color: #79F3AA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .sectionContact div img {
+      max-width: 272px;
+      max-height: 244px; }
+    .sectionContact div div p {
+      width: 24.3125rem;
+      height: 10.875rem;
+      color: #000000;
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.6rem;
+      display: flex;
+      align-items: center; }
+    .sectionContact div div span {
+      height: 10.875rem;
+      width: 21rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .sectionContact div div span button {
+        width: 191px;
+        height: 57px;
+        background-color: #79F3AA;
+        color: #111A20;
+        border: 2px solid #111A20;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem; }
+
+footer {
+  height: 18.75rem;
+  background-color: #33333D;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  footer div {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.375rem; }
+    footer div div {
+      width: 25.3125rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      footer div div img {
+        max-width: 5rem;
+        max-height: 3rem; }
+    footer div .footerNav {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.7rem;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: center; }
+      footer div .footerNav ul {
+        width: 33.25rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; }
+        footer div .footerNav ul li {
+          list-style-type: none; }
+          footer div .footerNav ul li a {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.7rem;
+            color: #FFFFFF;
+            text-decoration: none; }
+    footer div p {
+      font-size: 0.75rem;
+      line-height: 1.1rem;
+      margin-top: 2.5rem; }
+
+.expSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .expSkills div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+    .expSkills div h3 {
+      color: #79F3AA; }
+    .expSkills div h2 {
+      max-width: 32.875rem;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 4.09rem;
+      margin-top: 1.2rem; }
+    .expSkills div p {
+      max-width: 41.8125rem;
+      text-align: center;
+      margin-top: 1.2rem;
+      margin-bottom: 2.5rem; }
+    .expSkills div .skillContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      width: 72.125rem; }
+      .expSkills div .skillContainer .skillCard {
+        width: 7.125rem;
+        height: 7rem;
+        background-color: #33333D;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
+        .expSkills div .skillContainer .skillCard img {
+          width: 3.125rem;
+          height: 3.125rem; }
+        .expSkills div .skillContainer .skillCard h4 {
+          margin-top: 0,523125rem; }
+
+.experience {
+  margin-top: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .experience div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 72.5rem; }
+    .experience div h3 {
+      color: #79F3AA; }
+    .experience div h2 {
+      font-size: 3rem;
+      line-height: 4.08625rem; }
+  .experience .expCard {
+    width: 72.5rem;
+    height: 15.875rem;
+    background-color: #33333D;
+    border-radius: 1.25rem;
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
+    align-items: center; }
+    .experience .expCard div {
+      width: 67.5625rem;
+      height: 10.875rem;
+      align-items: center;
+      justify-content: space-between; }
+      .experience .expCard div ul {
+        width: 63.375rem;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 2.125rem;
+        color: #FFFFFF; }
+        .experience .expCard div ul li::marker {
+          color: #79F3AA; }
+      .experience .expCard div h3 {
+        width: 63.375rem; }
+      .experience .expCard div p {
+        width: 63.375rem; }
+
+.expFormation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .expFormation div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .expFormation div div {
+      flex-direction: column;
+      max-width: 41.8125rem; }
+      .expFormation div div h3 {
+        color: #79F3AA; }
+      .expFormation div div h2 {
+        font-size: 3rem;
+        line-height: 4.08625rem;
+        margin-bottom: 1.5rem; }
+  .expFormation .formationCard {
+    width: 72.5625rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    margin-top: 5rem; }
+    .expFormation .formationCard div {
+      width: 23.1875rem;
+      height: 18rem;
+      background-color: #33333D;
+      border-radius: 1.25rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      .expFormation .formationCard div div {
+        height: 13.25rem;
+        justify-content: space-between; }
+        .expFormation .formationCard div div ul {
+          width: 16.0625rem;
+          font-family: 'Noto Sans', sans-serif;
+          font-size: 2.125rem;
+          color: #FFFFFF; }
+          .expFormation .formationCard div div ul li p {
+            font-size: 2.125rem;
+            line-height: 2.894375rem;
+            margin-left: 0px; }
+          .expFormation .formationCard div div ul li::marker {
+            color: #79F3AA; }
+        .expFormation .formationCard div div h3 {
+          width: 16.0625rem; }
+        .expFormation .formationCard div div p {
+          width: 18.125rem;
+          margin-left: 2rem; }
+
+.servIntro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8.375rem; }
+  .servIntro div {
+    width: 68.3125rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between; }
+    .servIntro div img {
+      max-width: 23rem;
+      max-height: 23rem; }
+    .servIntro div div {
+      max-width: 41.8125rem;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center; }
+      .servIntro div div h3 {
+        color: #79F3AA;
+        font-size: 1.5rem;
+        line-height: 2.043125rem; }
+      .servIntro div div h2 {
+        font-size: 3rem;
+        line-height: 4.08625rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem; }
+      .servIntro div div p {
+        font-size: 1.5rem;
+        line-height: 2.043125rem;
+        text-align: center; }
+      .servIntro div div .cvButton1 {
+        margin-top: 2rem;
+        margin-bottom: 0px; }
+
+.servDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 10rem; }
+  .servDetails div {
+    width: 72.5625rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .servDetails div div {
+      width: 23.1875rem;
+      height: 15rem;
+      background-color: #33333D;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+      border-radius: 1.25rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      .servDetails div div div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center; }
+        .servDetails div div div ul {
+          width: 16.0625rem;
+          font-family: 'Noto Sans', sans-serif;
+          font-size: 1.5rem;
+          line-height: 2.043125rem;
+          color: #FFFFFF; }
+          .servDetails div div div ul li p {
+            margin-top: 0px;
+            font-size: 1.5rem;
+            line-height: 2.043125rem; }
+          .servDetails div div div ul li::marker {
+            color: #79F3AA; }
+        .servDetails div div div p {
+          width: 16.0625rem;
+          font-size: 1rem;
+          line-height: 1.361875rem;
+          margin-top: 1rem; }
+
+.portfolioIntro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10.75rem; }
+  .portfolioIntro div {
+    width: 72.375rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between; }
+    .portfolioIntro div img {
+      max-width: 23rem;
+      max-height: 23rem; }
+    .portfolioIntro div div {
+      max-width: 47.6875rem;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+      .portfolioIntro div div h3 {
+        color: #79F3AA;
+        font-size: 1.5rem;
+        line-height: 2.043125rem; }
+      .portfolioIntro div div h2 {
+        font-size: 3rem;
+        line-height: 4.08625rem;
+        margin-bottom: 1.5rem; }
+      .portfolioIntro div div p {
+        font-size: 1.5rem;
+        line-height: 2.043125rem; }
+
+.portfolioDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11.25rem;
+  margin-bottom: 10rem; }
+  .portfolioDetails div {
+    height: 80.1875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .portfolioDetails div .portfolioCard {
+      width: 72.5rem;
+      height: 25.0625rem;
+      border-radius: 1.25rem;
+      background-color: #33333D;
+      justify-content: center;
+      align-items: center; }
+      .portfolioDetails div .portfolioCard div {
+        width: 67.5rem;
+        height: 25.375rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        align-items: center; }
+        .portfolioDetails div .portfolioCard div img {
+          max-width: 24.1875rem;
+          max-height: 20.0625rem; }
+        .portfolioDetails div .portfolioCard div div {
+          flex-direction: column;
+          flex-wrap: nowrap;
+          width: 34.625rem;
+          height: 20.0625rem;
+          justify-content: flex-start;
+          align-items: flex-start; }
+          .portfolioDetails div .portfolioCard div div div {
+            align-items: flex-start; }
+            .portfolioDetails div .portfolioCard div div div ul {
+              width: 32.5625rem;
+              font-family: 'Noto Sans', sans-serif;
+              font-size: 2.125rem;
+              line-height: 2.894375rem;
+              color: #FFFFFF;
+              align-items: center;
+              justify-content: center;
+              margin-left: 2.5rem; }
+              .portfolioDetails div .portfolioCard div div div ul li p {
+                margin-top: 0px;
+                font-size: 2.125rem;
+                line-height: 2.894375rem;
+                margin-left: 0px; }
+              .portfolioDetails div .portfolioCard div div div ul li::marker {
+                color: #79F3AA; }
+            .portfolioDetails div .portfolioCard div div div h3 {
+              width: 32.5625rem;
+              color: #79F3AA;
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+              margin-left: 2.5rem; }
+            .portfolioDetails div .portfolioCard div div div p {
+              width: 32.5625rem;
+              margin-left: 2.5rem; }
+          .portfolioDetails div .portfolioCard div div .verButton {
+            width: 11.9375rem;
+            height: 3.5625rem;
+            background-color: #79F3AA;
+            filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.15));
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1rem;
+            line-height: 1.53875rem;
+            border-radius: 0.5rem;
+            border: none;
+            margin-left: 2.5rem; }
+
+.contactMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 10rem; }
+  .contactMain div {
+    height: 42.6875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .contactMain div div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+      .contactMain div div h3 {
+        color: #79F3AA; }
+      .contactMain div div h2 {
+        font-size: 3rem;
+        line-height: 4.08625rem; }
+    .contactMain div .formContainer {
+      width: 72.5rem;
+      max-height: 31.75rem;
+      background-color: #33333D;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+      border-radius: 1.25rem;
+      justify-content: space-between;
+      align-items: center; }
+      .contactMain div .formContainer div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: center;
+        width: 69.4375rem; }
+        .contactMain div .formContainer div form {
+          margin-left: 2rem;
+          width: 72.5rem;
+          height: 31.75rem;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: flex-end; }
+          .contactMain div .formContainer div form input {
+            margin-left: 1rem;
+            width: 51.125rem;
+            height: 4.0625rem;
+            border-radius: 1.25rem;
+            background-color: #27272C;
+            border: none;
+            text-align: start;
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 2.043125rem; }
+          .contactMain div .formContainer div form input[type=text]:focus {
+            outline: none; }
+          .contactMain div .formContainer div form input::placeholder {
+            font-family: 'Noto Sans', sans-serif;
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 2.043125rem;
+            padding-left: 1.5rem; }
+          .contactMain div .formContainer div form textarea {
+            margin-left: 1rem;
+            width: 51.125rem;
+            height: 4.0625rem;
+            border-radius: 1.25rem;
+            background-color: #27272C;
+            border: none;
+            text-align: start;
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 2.043125rem; }
+          .contactMain div .formContainer div form textarea::placeholder {
+            font-family: 'Noto Sans', sans-serif;
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 2.043125rem;
+            padding-top: 1.5rem;
+            padding-left: 1.5rem; }
+          .contactMain div .formContainer div form textarea:focus {
+            outline: none; }
+          .contactMain div .formContainer div form .apellido {
+            margin-top: 1rem;
+            margin-bottom: 1rem; }
+          .contactMain div .formContainer div form .mensaje {
+            height: 11.0625rem; }
+          .contactMain div .formContainer div form .sendButton {
+            width: 11.9375rem;
+            height: 3.5625rem;
+            background-color: #79F3AA;
+            filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.15));
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1rem;
+            line-height: 1.53875rem;
+            border-radius: 0.5rem;
+            border: none; }
+          .contactMain div .formContainer div form div {
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 21.4375rem;
+            height: 3.5625rem;
+            margin-top: 2rem; }
+            .contactMain div .formContainer div form div div {
+              width: 7rem; }
+              .contactMain div .formContainer div form div div .socialMedia1 {
+                width: 2.75rem;
+                height: 2.75rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                background-color: #27272C;
+                box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+                border-radius: 0.5rem; }
+                .contactMain div .formContainer div form div div .socialMedia1 img {
+                  max-width: 2rem;
+                  max-height: 2rem; }
+        .contactMain div .formContainer div .contactImg {
+          width: 20.5625rem;
+          height: 20.5625rem; }
+
+@media (max-width: 420px) {
+  .headerNav {
+    justify-content: space-between; }
+    .headerNav img {
+      margin-left: 9.25rem; }
+  .sectionIntro {
+    height: 44.3125rem;
+    align-content: flex-start; }
+    .sectionIntro img {
+      max-width: 12.5rem;
+      max-height: 12.25rem;
+      margin-top: 2.5rem;
+      margin-right: 0; }
+    .sectionIntro div h2 {
+      font-size: 1.25rem; }
+    .sectionIntro div h1 {
+      font-size: 2.125rem;
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    .sectionIntro div h3 {
+      font-size: 1rem; }
+    .sectionIntro div .cvButton {
+      margin-top: 2rem;
+      margin-bottom: 0rem; }
+  .sectionAboutMe {
+    height: 43.1875rem; }
+    .sectionAboutMe div {
+      height: auto;
+      width: 21.4375rem;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      .sectionAboutMe div img {
+        max-width: 13.75rem;
+        max-height: 13.75rem; }
+      .sectionAboutMe div div {
+        align-items: center;
+        justify-content: flex-start;
+        height: 21.5rem; }
+        .sectionAboutMe div div h3 {
+          font-size: 1.25rem; }
+        .sectionAboutMe div div h2 {
+          font-size: 2.125rem;
+          margin-top: 0.5rem;
+          margin-bottom: 1rem; }
+        .sectionAboutMe div div p {
+          width: 18.4375rem;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          text-align: center;
+          margin-top: 1rem; }
+        .sectionAboutMe div div .contactButton {
+          margin-top: 1.5rem;
+          margin-bottom: 2.5rem; }
+  .sectionSkills {
+    height: 54.25rem;
+    width: auto;
+    justify-content: flex-start;
+    margin-top: 3rem; }
+    .sectionSkills div {
+      justify-content: center; }
+      .sectionSkills div div {
+        width: 21.3125rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; }
+        .sectionSkills div div h3 {
+          font-size: 1.25rem; }
+        .sectionSkills div div h2 {
+          font-size: 2.125rem;
+          line-height: 3rem;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+          text-align: center; }
+        .sectionSkills div div p {
+          font-size: 1rem;
+          text-align: center; }
+      .sectionSkills div .memojiLaptop {
+        width: 12.5rem;
+        height: 12.5rem; }
+    .sectionSkills .skills {
+      justify-content: center; }
+  .sectionPortfolio {
+    margin-top: 4.0625rem; }
+    .sectionPortfolio div {
+      width: 21.3125rem; }
+      .sectionPortfolio div h3 {
+        font-size: 1.25rem;
+        line-height: 1.7025rem; }
+      .sectionPortfolio div h2 {
+        font-size: 2.125rem;
+        line-height: 2.894375rem; }
+    .sectionPortfolio .spContainer {
+      width: 21.5375rem;
+      gap: 2rem; }
+      .sectionPortfolio .spContainer .spCard {
+        width: 21.5375rem;
+        height: 26.875rem; }
+        .sectionPortfolio .spContainer .spCard img {
+          width: 18.4375rem;
+          height: 10.331875rem; }
+        .sectionPortfolio .spContainer .spCard div {
+          width: 18.4375rem; }
+          .sectionPortfolio .spContainer .spCard div div {
+            width: 18.4375rem; }
+            .sectionPortfolio .spContainer .spCard div div ul {
+              width: 18.4375rem; }
+            .sectionPortfolio .spContainer .spCard div div h3 {
+              width: 18.4375rem; }
+            .sectionPortfolio .spContainer .spCard div div p {
+              width: 18.4375rem; }
+  .sectionContact {
+    height: 27.375rem;
+    background: linear-gradient(180deg, #111A20 66%, #33333D 33%); }
+    .sectionContact div {
+      height: 27.375rem;
+      width: 21.5625rem;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      align-content: space-between;
+      justify-content: flex-end; }
+      .sectionContact div img {
+        max-width: 17rem;
+        max-height: 15.25rem; }
+      .sectionContact div div {
+        height: 10.625rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2.5rem; }
+        .sectionContact div div p {
+          width: 18.5625rem;
+          height: 5rem; }
+        .sectionContact div div span {
+          justify-content: flex-start;
+          height: 3.5625rem;
+          width: 18.5625rem; }
+  footer {
+    height: 28.8125rem;
+    width: auto; }
+    footer div {
+      width: 23.4375rem;
+      height: 23.125rem;
+      margin-bottom: 2rem; }
+      footer div div {
+        width: 18.75rem;
+        justify-content: center; }
+        footer div div img {
+          max-width: 5rem;
+          max-height: 3rem; }
+        footer div div h2 {
+          font-size: 2.125rem; }
+      footer div .footerNav ul {
+        width: 6.625rem;
+        height: 12.5rem;
+        justify-content: center; }
+  .expSkills img {
+    max-width: 12.5rem;
+    max-height: 12.5rem; }
+  .expSkills div {
+    max-width: 21.4375rem; }
+    .expSkills div h3 {
+      font-size: 1.25rem;
+      line-height: 1.7025rem; }
+    .expSkills div h2 {
+      font-size: 2.125rem;
+      line-height: 2.894375rem;
+      max-width: 19rem; }
+    .expSkills div p {
+      font-size: 1rem;
+      line-height: 1.361875rem;
+      max-width: 19rem; }
+    .expSkills div .skillContainer {
+      width: 21.4375rem;
+      height: 21.125rem; }
+      .expSkills div .skillContainer .skillCard {
+        width: 6.5rem;
+        height: 6.375rem; }
+  .experience {
+    margin-top: 3rem; }
+    .experience div {
+      max-width: 21.3125rem; }
+      .experience div h3 {
+        font-size: 1.25rem;
+        line-height: 1.7025rem; }
+      .experience div h2 {
+        font-size: 2.125rem;
+        line-height: 2.894375rem; }
+    .experience .expCard {
+      height: 11.8125rem;
+      margin-top: 2.5rem;
+      margin-bottom: 3.5rem; }
+      .experience .expCard div {
+        max-width: 18.9375rem;
+        max-height: 8.8125rem; }
+        .experience .expCard div ul {
+          width: 16.9375rem;
+          font-size: 1.25rem;
+          font-weight: 500;
+          line-height: 1.7025rem; }
+        .experience .expCard div h3 {
+          width: 16.9375rem;
+          font-size: 0.875rem;
+          line-height: 1.25rem; }
+        .experience .expCard div p {
+          width: 16.9375rem;
+          font-size: 0.625rem;
+          line-height: 0.905rem; }
+  .expFormation div {
+    align-items: center;
+    justify-content: center; }
+    .expFormation div img {
+      max-width: 16.0625rem;
+      max-height: 16.0625rem; }
+    .expFormation div div h3 {
+      font-size: 1.25rem;
+      line-height: 1.7025rem; }
+    .expFormation div div h2 {
+      font-size: 2.125rem;
+      line-height: 2.894375rem;
+      max-width: 19rem; }
+    .expFormation div div p {
+      font-size: 1rem;
+      line-height: 1.361875rem;
+      max-width: 19rem;
+      text-align: center; }
+  .expFormation .formationCard {
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
+    width: 21.4375rem;
+    height: 30.75rem;
+    align-content: space-between;
+    justify-content: space-around; }
+    .expFormation .formationCard div {
+      width: 10.25rem;
+      height: 13.875rem; }
+      .expFormation .formationCard div div {
+        width: 8.25rem;
+        max-height: 10.875rem;
+        align-items: flex-start; }
+        .expFormation .formationCard div div ul {
+          width: 8.25rem;
+          font-size: 1.25rem;
+          line-height: 1.7025rem;
+          list-style-position: inside; }
+          .expFormation .formationCard div div ul li p {
+            font-size: 1.25rem;
+            line-height: 1.7025rem;
+            margin-left: 0px; }
+        .expFormation .formationCard div div h3 {
+          width: 8.25rem;
+          font-size: 0.875rem;
+          line-height: 1.25rem; }
+        .expFormation .formationCard div div p {
+          width: 8.25rem;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+          text-align: start;
+          margin-left: 0px; }
+    .expFormation .formationCard .customCard {
+      height: 15.375rem; }
+      .expFormation .formationCard .customCard div {
+        max-height: 12.375rem; }
+  .servIntro {
+    margin-top: 3.5rem; }
+    .servIntro div {
+      width: 21.3125rem;
+      justify-content: center; }
+      .servIntro div img {
+        max-width: 12.5rem;
+        max-height: 12.5rem; }
+      .servIntro div div {
+        max-width: 21.3125rem; }
+        .servIntro div div h3 {
+          font-size: 1.25rem;
+          line-height: 1.7025rem; }
+        .servIntro div div h2 {
+          font-size: 2.125rem;
+          line-height: 2.894375rem;
+          margin-top: 0.5rem;
+          text-align: center; }
+        .servIntro div div p {
+          max-width: 18.4375rem;
+          font-size: 1rem;
+          line-height: 1.361875rem; }
+        .servIntro div div .cvButton1 {
+          margin-top: 2.5rem; }
+  .servDetails {
+    margin-top: 3rem;
+    margin-bottom: 5rem; }
+    .servDetails div {
+      justify-content: center;
+      height: 38.4375rem; }
+      .servDetails div div {
+        width: 21.4375rem;
+        height: 11.8125rem; }
+        .servDetails div div div {
+          justify-content: flex-start; }
+          .servDetails div div div ul {
+            margin-top: 1.5rem; }
+            .servDetails div div div ul li p {
+              font-size: 1.25rem;
+              line-height: 1.7025rem;
+              font-weight: 500; }
+          .servDetails div div div p {
+            width: 17rem;
+            font-size: 0.875rem;
+            line-height: 1.266875rem; }
+  .portfolioIntro {
+    margin-top: 3.5rem; }
+    .portfolioIntro div {
+      max-width: 21.3125rem;
+      justify-content: center;
+      align-items: center; }
+      .portfolioIntro div img {
+        max-width: 12.5rem;
+        max-height: 12.5rem; }
+      .portfolioIntro div div h3 {
+        font-size: 1.25rem;
+        line-height: 1.7025rem; }
+      .portfolioIntro div div h2 {
+        font-size: 2.125rem;
+        line-height: 2.894375rem; }
+      .portfolioIntro div div p {
+        font-size: 1rem;
+        line-height: 1.361875rem;
+        text-align: center; }
+  .portfolioDetails {
+    margin-top: 3.5rem;
+    margin-bottom: 5rem; }
+    .portfolioDetails div {
+      height: 112.25rem;
+      width: 21.4375rem; }
+      .portfolioDetails div .portfolioCard {
+        height: 35.75rem;
+        width: 21.4375rem; }
+        .portfolioDetails div .portfolioCard div {
+          height: 32.75rem;
+          width: 19.4375rem;
+          align-content: space-between; }
+          .portfolioDetails div .portfolioCard div img {
+            width: 19.4375rem;
+            height: 16.125rem; }
+          .portfolioDetails div .portfolioCard div div {
+            width: 19.4375rem;
+            height: 16.625rem; }
+            .portfolioDetails div .portfolioCard div div div ul {
+              width: auto;
+              font-size: 1.25rem;
+              line-height: 1.7025rem;
+              margin-left: 1rem;
+              margin-top: 1rem; }
+              .portfolioDetails div .portfolioCard div div div ul li p {
+                font-size: 1.25rem;
+                line-height: 1.7025rem; }
+            .portfolioDetails div .portfolioCard div div div h3 {
+              width: auto;
+              font-size: 0.875rem;
+              line-height: 1.266875rem;
+              margin-left: 1rem;
+              margin-top: 0.5rem; }
+            .portfolioDetails div .portfolioCard div div div p {
+              width: auto;
+              font-size: 0.875rem;
+              line-height: 1.266875rem;
+              margin-left: 1rem; }
+            .portfolioDetails div .portfolioCard div div .verButton {
+              margin-left: 3.5rem; }
+  .contactMain {
+    margin-bottom: 5rem; }
+    .contactMain div {
+      align-items: center;
+      height: 33.125rem; }
+      .contactMain div div h3 {
+        font-size: 1.25rem;
+        line-height: 1.7025rem; }
+      .contactMain div div h2 {
+        font-size: 2.125rem;
+        line-height: 2.894375rem; }
+      .contactMain div .formContainer {
+        width: 21.375rem;
+        height: 25.5625rem; }
+        .contactMain div .formContainer div {
+          width: 21.375rem;
+          align-items: flex-start; }
+          .contactMain div .formContainer div img {
+            display: none; }
+          .contactMain div .formContainer div form {
+            margin-left: 0px;
+            height: 23.5rem;
+            align-items: center; }
+            .contactMain div .formContainer div form input {
+              margin-left: 0px;
+              width: 19.375rem;
+              height: 3.1875rem;
+              border-radius: 1rem;
+              font-size: 0.875rem;
+              line-height: 1.266875rem; }
+            .contactMain div .formContainer div form input::placeholder {
+              font-size: 0.875rem;
+              line-height: 1.266875rem; }
+            .contactMain div .formContainer div form textarea {
+              margin-left: 0px;
+              width: 19.375rem;
+              height: 9.4375rem;
+              font-size: 0.875rem;
+              line-height: 1.266875rem; }
+            .contactMain div .formContainer div form textarea::placeholder {
+              font-size: 0.875rem;
+              line-height: 1.266875rem;
+              padding-top: 1rem; }
+            .contactMain div .formContainer div form .nombre {
+              margin-top: 1.5rem; }
+            .contactMain div .formContainer div form .apellido {
+              margin-top: 0.5rem;
+              margin-bottom: 0.5rem; }
+            .contactMain div .formContainer div form .mensaje {
+              height: 9.4375rem; }
+            .contactMain div .formContainer div form div {
+              width: 19.3375rem;
+              margin-top: 1.1875rem; }
+              .contactMain div .formContainer div form div div {
+                width: 6rem; }
+                .contactMain div .formContainer div form div div img {
+                  display: block; } }
